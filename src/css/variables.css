@@ -1,0 +1,71 @@
+/* ==============================================
+   RELATS REBUILD — CSS Custom Properties
+   Alle Werte aus ref/css-tokens.css übernommen
+   ============================================== */
+
+:root {
+  /* -- FARBEN -- */
+  --color-dark: #1C1C1C;
+  --color-orange: #FF5710;
+  --color-beige: #E8E4DF;
+  --color-loader-bg: #EAE4DF;
+  --color-white: #FFFFFF;
+
+  /* -- TYPOGRAFIE -- */
+  --font-primary: 'Inter', Helvetica, Arial, sans-serif;
+  --font-mono: 'DM Mono', Georgia, 'Times New Roman', serif;
+  --font-size-base: 18px;
+  --line-height-base: 1.4;
+
+  /* Font-Groessen */
+  --text-jumbo: clamp(48px, 5vw, 69px);
+  --text-xlarge: clamp(40px, 4vw, 56px);
+  --text-large: clamp(32px, 3.5vw, 40px);
+  --text-medium: clamp(20px, 2vw, 24px);
+  --text-small: clamp(16px, 1.5vw, 20px);
+  --text-xsmall: 14px;
+  --text-label: 12px;
+  --text-body: 16px;
+  --text-button: 14px;
+
+  /* -- LAYOUT -- */
+  --container-margin: 17.25px;
+  --container-max-width: calc(100% - 34.5px);
+  --section-padding-y: 120px;
+
+  /* -- BUTTON -- */
+  --btn-height: 46px;
+  --btn-radius: 17.25px;
+  --btn-padding-x: 24px;
+  --btn-font-size: 14px;
+  --btn-transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* -- CARD -- */
+  --card-radius: 10px;
+  --card-image-scale-hover: 1.05;
+
+  /* -- HEADER -- */
+  --header-height: 69px;
+  --header-z: 80;
+
+  /* -- Z-INDEX SCALE -- */
+  --z-header: 80;
+  --z-menu: 90;
+  --z-loader: 100;
+
+  /* -- ANIMATION -- */
+  --ease-default: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
+  --duration-fast: 0.4s;
+  --duration-normal: 0.6s;
+  --duration-slow: 1.2s;
+
+  /* -- BREAKPOINTS (als Custom Properties fuer JS) -- */
+  --bp-phone-small: 400px;
+  --bp-phone: 576px;
+  --bp-tablet: 768px;
+  --bp-tablet-mid: 845px;
+  --bp-tablet-landscape: 1024px;
+  --bp-desktop: 1100px;
+  --bp-wide: 1920px;
+}

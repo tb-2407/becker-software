@@ -1,0 +1,111 @@
+/* ==============================================
+   Layout — Container, Columns-System
+   ============================================== */
+
+.container {
+  max-width: var(--container-max-width);
+  margin-left: var(--container-margin);
+  margin-right: var(--container-margin);
+}
+
+/* -- Columns (Flex-basiert) -- */
+.columns {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.columns.--center {
+  align-items: center;
+}
+
+.columns.--stretch {
+  align-items: stretch;
+}
+
+.columns.--wrap {
+  flex-wrap: wrap;
+}
+
+.columns__item {
+  flex: 0 1 auto;
+}
+
+.columns__item.--grow {
+  flex: 1 1 auto;
+}
+
+.columns__item.--half {
+  flex: 0 0 50%;
+}
+
+.columns__item.--third {
+  flex: 0 0 33.333%;
+}
+
+.columns__item.--quarter {
+  flex: 0 0 25%;
+}
+
+.columns__item.--two-thirds {
+  flex: 0 0 66.666%;
+}
+
+/* -- Floating Elements (absolute positioned) -- */
+.floating {
+  position: absolute;
+}
+
+.floating.--bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+.floating.--bottomright {
+  bottom: 0;
+  right: 0;
+}
+
+.floating.--topright {
+  top: 0;
+  right: 0;
+}
+
+.floating.--topleft {
+  top: 0;
+  left: 0;
+}
+
+.floating.--center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* -- Utility -- */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex.--gap-sm {
+  gap: 8px;
+}
+
+.flex.--gap-md {
+  gap: 16px;
+}
+
+.flex.--gap-lg {
+  gap: 24px;
+}
+
+.flex.--between {
+  justify-content: space-between;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

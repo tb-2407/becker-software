@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Becker Software — Digital craftsmanship for websites, iOS apps, and workflow automation. Solo developer based in Germany.">
+    <meta property="og:image" content="./assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+  <title>Becker — Digital craftsmanship for ambitious projects</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="loader">
+    <div class="loader__inner">
+      <svg class="loader__logo" viewBox="0 0 32 34" width="60" height="64">
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="'Inter', Helvetica, Arial, sans-serif" font-weight="700" font-size="28" fill="currentColor">B</text>
+</svg>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="component component--header header">
+    <div class="container">
+      <div class="columns --center">
+        <div class="columns__item">
+          <a href="/" class="logo">
+            <svg viewBox="0 0 109 34" width="109" height="34">
+  <text x="0" y="25" font-family="'Inter', Helvetica, Arial, sans-serif" font-weight="700" font-size="24" fill="currentColor" letter-spacing="-0.5">BECKER</text>
+</svg>
+          </a>
+        </div>
+        <!-- Navigation (hidden < 1100px) -->
+        <div class="columns__item nav-desktop">
+          <div class="flex">
+            <a href="/products.html" class="nav-link has-submenu">Portfolio
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <a href="/company.html" class="nav-link">About</a>
+            <a href="/governance.html" class="nav-link">How I Work</a>
+            <a href="/sustainability.html" class="nav-link">Tech Stack</a>
+            <a href="/talents.html" class="nav-link">Work With Me</a>
+          </div>
+        </div>
+        <!-- Right Group -->
+        <div class="group">
+          <a class="notch header-notch" href="/products.html">NEW</a>
+          <a class="contact-btn" href="/contact.html">Contact</a>
+          <button class="header-icon-btn" aria-label="Login" data-open="login">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </button>
+          <button class="header-icon-btn" aria-label="Search" data-open="search">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <button class="menu-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- HOMEPAGE SECTIONS                                             -->
+  <!-- ============================================================ -->
+  <main>
+
+    <!-- SECTION 1: HERO -->
+    <section class="component component--hero hero --dark">
+      <div class="video --cover">
+        <video autoplay muted loop playsinline preload="auto" class="hero__video">
+          <source src="./assets/video/hero-bg.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="floating --bottomleft">
+          <h1 class="title --xlarge">Digital craftsmanship<br>for ambitious projects</h1>
+        </div>
+        <div class="floating --bottomright">
+          <a href="/products.html" class="button --over-black">Explore services
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="javascript:void(0)" class="hero__watch-video" onclick="document.querySelector('.component--animation').scrollIntoView({behavior:'smooth'})">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Watch video
+          </a>
+        </div>
+        <div class="floating --topright">
+          <a class="notch-card" href="/product-detail.html">
+            <div class="notch-card__image"><img src="./assets/images/notch-card.webp" alt="Latest Project" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="notch-card__text">
+              <span class="notch-card__title">Latest Project <span class="badge">NEW</span></span>
+              <span class="notch-card__link">Discover
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="floating --bottom-center">
+          <svg class="scroll-indicator icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ANIMATION (Sticky + ClipPath) -->
+    <section class="component component--animation animation --beige">
+      <div class="sticky">
+        <div class="video --cover">
+          <video muted playsinline preload="auto" class="animation__video">
+            <source src="./assets/video/animation-reel.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="container">
+          <div class="title --jumbo title--1">Building the<br>future</div>
+          <div class="title --jumbo title--2">one pixel<br>at a <span class="accent">time</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INDUSTRIES -->
+    <section class="component component--industries industries">
+      <div class="container">
+        <div class="label">Our services</div>
+        <div class="industries__list">
+          <a href="/products.html" class="industries__item">
+            <span class="industries__name title --large">Web Development</span>
+            <span class="industries__count">6 products</span>
+          </a>
+          <a href="/products.html" class="industries__item">
+            <span class="industries__name title --large">Apple Development</span>
+            <span class="industries__count">6 products</span>
+          </a>
+          <a href="/products.html" class="industries__item">
+            <span class="industries__name title --large">Automation &amp; AI</span>
+            <span class="industries__count">3 products</span>
+          </a>
+        </div>
+        <a href="/products.html" class="industries__browse">View all services
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FEATURED -->
+    <section class="component component--featured featured --beige">
+      <div class="container">
+        <div class="featured__header">
+          <div class="featured__image-col">
+            <img src="./assets/images/featured-header.webp" alt="Apple Devices Lineup" style="width:100%; height:400px; object-fit:cover; border-radius: var(--card-radius);">
+          </div>
+          <div class="featured__title-col">
+            <div class="title --large split">Selected work across<br>web, mobile &amp; <em class="accent">automation.</em></div>
+          </div>
+        </div>
+        <div class="columns --wrap featured__grid">
+          <div class="columns__item --half">
+            <a href="/product-detail.html" class="card --featured">
+              <div class="card__image"><img src="./assets/images/featured-web.webp" alt="Professional Website" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="card__content">
+                <span class="label">Web Development</span>
+                <h3 class="card__title">E-Commerce Redesign</h3>
+              </div>
+            </a>
+          </div>
+          <div class="columns__item --half">
+            <a href="/product-detail.html" class="card --featured">
+              <div class="card__image"><img src="./assets/images/featured-ios.webp" alt="iOS App" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="card__content">
+                <span class="label">iOS App</span>
+                <h3 class="card__title">Fitness Tracker App</h3>
+              </div>
+            </a>
+          </div>
+          <div class="columns__item --half">
+            <a href="/product-detail.html" class="card --featured">
+              <div class="card__image"><img src="./assets/images/featured-dashboard.webp" alt="Web App Dashboard" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="card__content">
+                <span class="label">Web Application</span>
+                <h3 class="card__title">Analytics Dashboard</h3>
+              </div>
+            </a>
+          </div>
+          <div class="columns__item --half">
+            <a href="/product-detail.html" class="card --featured">
+              <div class="card__image"><img src="./assets/images/featured-automation.webp" alt="Workflow Automation" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="card__content">
+                <span class="label">n8n Automation</span>
+                <h3 class="card__title">Lead Automation</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: COMBO -->
+    <section class="component component--combo combo">
+      <div class="container">
+        <!-- Card 1: About (Orange) -->
+        <div class="combo__card --orange">
+          <div class="columns">
+            <div class="columns__item --half">
+              <div class="label --over-main">About</div>
+              <p class="text --large" style="color: var(--color-white); margin-bottom: 24px;">
+                I build digital products that work — websites, iOS apps, and automated workflows. Solo developer with a full-stack mindset, based in Germany.
+              </p>
+              <a href="/company.html" class="button --white">Learn more</a>
+            </div>
+            <div class="columns__item --half">
+              <div class="combo__image">
+                <img src="./assets/images/about-placeholder.webp" alt="Tom Becker" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Sustainability (Beige) -->
+        <div class="combo__card --light">
+          <div class="columns">
+            <div class="columns__item --half">
+              <div class="label">Tech Stack</div>
+              <p class="text --large" style="margin-bottom: 24px;">
+                Modern tools for modern problems. Next.js, SwiftUI, n8n, and more — always choosing the right technology for your project.
+              </p>
+              <a href="/sustainability.html" class="button --outline">Learn more</a>
+            </div>
+            <div class="columns__item --half">
+              <div class="combo__image">
+                <img src="./assets/images/tech-stack.webp" alt="Tech Stack" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: POSTS -->
+    <section class="component component--posts posts --dark">
+      <div class="container">
+        <div class="label" style="color: var(--color-white); opacity: 0.6;">Blog</div>
+        <div class="title --large" style="color: var(--color-white); margin-bottom: 40px;">Latest posts</div>
+        <div class="columns --wrap posts__grid">
+          <div class="columns__item --third">
+            <a href="/product-detail.html" class="card --post">
+              <div class="card__image"><img src="./assets/images/blog-1.webp" alt="Blog: Web Trends" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="card__content">
+                <span class="card__date">February 28, 2026</span>
+                <h3 class="card__title">Why I Choose Next.js for Every Project</h3>
+                <span class="card__link">Read <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </a>
+          </div>
+          <div class="columns__item --third">
+            <a href="/product-detail.html" class="card --post">
+              <div class="card__image"><img src="./assets/images/blog-2.webp" alt="Blog: Automation" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="card__content">
+                <span class="card__date">January 15, 2026</span>
+                <h3 class="card__title">Building iOS Apps with SwiftUI in 2026</h3>
+                <span class="card__link">Read <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </a>
+          </div>
+          <div class="columns__item --third">
+            <a href="/product-detail.html" class="card --post">
+              <div class="card__image"><img src="./assets/images/blog-3.webp" alt="Blog: iOS Development" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="card__content">
+                <span class="card__date">December 10, 2025</span>
+                <h3 class="card__title">Automating Business Processes with n8n</h3>
+                <span class="card__link">Read <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CALL TO ACTION (Two cards side by side) -->
+    <section class="component component--cta-duo">
+      <div class="container">
+        <div class="columns cta-duo__grid">
+          <div class="columns__item --half">
+            <div class="cta-duo__card --dark">
+              <div class="title --large split" style="margin-bottom: 24px; color: var(--color-white);">See what I<br>can build</div>
+              <a href="/products.html" class="button --white" style="margin-top: 24px;">View Portfolio <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </div>
+          <div class="columns__item --half">
+            <div class="cta-duo__card --orange">
+              <div class="title --large split" style="color: var(--color-white);">Have a project?</div>
+              <a href="/contact.html" class="button --white" style="margin-top: 24px;">Get in touch <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="component component--footer footer">
+    <div class="container">
+      <a href="/" class="logo footer__logo">
+        <svg viewBox="0 0 109 34" width="109" height="34" style="color: var(--color-white);">
+  <text x="0" y="25" font-family="'Inter', Helvetica, Arial, sans-serif" font-weight="700" font-size="24" fill="currentColor" letter-spacing="-0.5">BECKER</text>
+</svg>
+      </a>
+      <div class="footer__links">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+      <div class="footer__contact">
+        <span>M kontakt@software-becker.com</span>
+      </div>
+      <p class="footer__copyright">BECKER &copy; 2026</p>
+    </div>
+  </footer>
+
+  <!-- MENU OVERLAY -->
+  <nav class="component component--menu menu">
+    <div class="container">
+      <div class="menu__header">
+        <a href="/contact.html" class="menu__login">Get in touch</a>
+        <button class="menu__close" aria-label="Close menu">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <div class="columns menu__columns">
+        <div class="columns__item menu__col-main">
+          <ul class="menu__industries">
+            <li><a href="/products.html">Web Development</a></li>
+            <li><a href="/products.html">Apple Development</a></li>
+            <li><a href="/products.html">Automation &amp; AI</a></li>
+          </ul>
+          <a href="/products.html" class="menu__browse">View all services
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="columns__item menu__col-links">
+          <ul class="menu__submenu">
+            <li><a href="/company.html">About</a></li>
+            <li><a href="/governance.html">How I Work</a></li>
+            <li><a href="/sustainability.html">Tech Stack</a></li>
+            <li><a href="/talents.html">Work With Me</a></li>
+          </ul>
+        </div>
+        <div class="columns__item menu__col-buttons">
+          <a href="/contact.html" class="button --over-black">Contact</a>
+        </div>
+        <div class="columns__item menu__col-promo">
+          <div class="notchbanner">
+            <span class="badge">NEW</span>
+            <span>Latest Project</span>
+            <a href="/product-detail.html">Discover
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menu__footer">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SEARCH OVERLAY -->
+  <aside class="component component--search search">
+    <button class="search__close" aria-label="Close search">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <div class="search__form">
+      <input type="search" placeholder="Search services..." aria-label="Search services" class="search__input" />
+    </div>
+    <div class="search__popular">
+      <div class="label --plain">Popular searches</div>
+      <div class="search__tags">
+        <a href="/products.html" class="tag">Next.js</a>
+        <a href="/products.html" class="tag">SwiftUI</a>
+        <a href="/products.html" class="tag">n8n</a>
+        <a href="/products.html" class="tag">React</a>
+        <a href="/products.html" class="tag">iOS</a>
+      </div>
+    </div>
+    <div class="search__results"></div>
+  </aside>
+
+  <!-- LOGIN OVERLAY -->
+  <aside class="component component--login login">
+    <button class="login__close" aria-label="Close login">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <h2 class="title --medium" style="margin-bottom: 32px;">Client Login</h2>
+    <form class="login__form">
+      <input type="email" placeholder="Email" aria-label="Email" class="login__input" />
+      <input type="password" placeholder="Password" aria-label="Password" class="login__input" />
+      <button type="submit" class="button --dark" style="width: 100%;">Log in</button>
+    </form>
+  </aside>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

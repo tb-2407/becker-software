@@ -1,0 +1,279 @@
+/* ==============================================
+   Components — Buttons, Cards, Labels
+   ============================================== */
+
+/* -- BUTTONS -- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-height);
+  padding: 0 var(--btn-padding-x);
+  border-radius: var(--btn-radius);
+  font-family: var(--font-primary);
+  font-size: var(--btn-font-size);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all var(--btn-transition);
+  border: 1px solid transparent;
+  background: var(--color-white);
+  color: var(--color-dark);
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+/* Orange CTA */
+.button.--main {
+  background: var(--color-orange);
+  border-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.button.--main:hover {
+  opacity: 0.9;
+}
+
+/* Outline / Ghost */
+.button.--outline {
+  background: transparent;
+  border-color: rgba(0, 0, 0, 0.2);
+  color: var(--color-dark);
+}
+
+.button.--outline:hover {
+  background: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+/* Dark */
+.button.--dark {
+  background: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.button.--dark:hover {
+  opacity: 0.85;
+}
+
+/* White (on dark backgrounds) */
+.button.--white {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+/* Over black (for dark sections) */
+.button.--over-black {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+}
+
+.button.--over-black:hover {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+/* -- CARDS -- */
+.card {
+  display: block;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--duration-normal) var(--ease-default);
+}
+
+.card__image {
+  overflow: hidden;
+  border-radius: var(--card-radius);
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-normal) var(--ease-default);
+}
+
+.card:hover .card__image img {
+  transform: scale(var(--card-image-scale-hover));
+}
+
+.card__content {
+  padding: 16px 0;
+}
+
+.card__description {
+  font-size: var(--text-body);
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.card__title {
+  font-family: var(--font-primary);
+  font-size: var(--text-small);
+  font-weight: 500;
+}
+
+.card__link {
+  font-family: var(--font-primary);
+  font-size: var(--text-button);
+  font-weight: 500;
+  color: var(--color-orange);
+  transition: opacity var(--duration-fast) var(--ease-default);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card__link .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.card__link:hover {
+  opacity: 0.7;
+}
+
+/* Post Card variant */
+.card.--post .card__content {
+  padding: 20px 0;
+}
+
+.card.--post .card__date {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  opacity: 0.6;
+}
+
+/* -- NOTCH (NEW badge) -- */
+.notch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 14px;
+  background: var(--color-orange);
+  color: var(--color-white);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0 10px;
+  transition: opacity var(--btn-transition);
+}
+
+.notch:hover {
+  opacity: 0.85;
+}
+
+/* Notch as dark floating card (hero promo) */
+.notch-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  border-radius: var(--card-radius);
+  background: rgba(28, 28, 28, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: opacity var(--btn-transition);
+  min-width: 240px;
+}
+
+.notch-card:hover {
+  opacity: 0.9;
+}
+
+.notch-card__image {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #4a2a0a 0%, var(--color-orange) 100%);
+}
+
+.notch-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.notch-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notch-card__title {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notch-card__title .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: var(--color-orange);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.notch-card__link {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  opacity: 0.7;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.notch-card__link .icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* -- SECTION BASE -- */
+.component {
+  position: relative;
+  width: 100%;
+}
+
+.component.--dark {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.component.--beige {
+  background-color: var(--color-beige);
+}
+
+.component.--orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}

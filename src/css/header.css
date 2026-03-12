@@ -1,0 +1,242 @@
+/* ==============================================
+   Header + Navigation
+   ============================================== */
+
+.component--header {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  right: 0;
+  z-index: var(--z-header);
+  height: var(--header-height);
+  padding: 11.5px 0;
+  background: transparent;
+  transition: background var(--duration-normal) var(--ease-default),
+              color var(--duration-normal) var(--ease-default);
+  color: var(--color-white);
+}
+
+.component--header .container {
+  height: 100%;
+}
+
+.component--header .columns {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* -- Header Notch (small NEW badge, visible on scroll) -- */
+.header-notch {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+  transition: all var(--duration-normal) var(--ease-default);
+}
+
+.component--header.--scrolled .header-notch {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* -- Scrolled State (light bg, dark text — matches original) -- */
+.component--header.--scrolled .nav-desktop {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.component--header.--scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--color-dark);
+}
+
+.component--header.--scrolled .header-icon-btn {
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.component--header.--scrolled .header-icon-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.component--header.--scrolled .menu-toggle span {
+  background: var(--color-dark);
+}
+
+.component--header.--scrolled .contact-btn {
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+}
+
+/* -- On light sections -- */
+.component--header.--light {
+  color: var(--color-dark);
+}
+
+/* -- Logo -- */
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 109px;
+  height: 46px;
+}
+
+.logo svg {
+  width: 109px;
+  height: 34px;
+  color: currentColor;
+}
+
+.logo .lottie-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+}
+
+/* -- Navigation Links (Desktop) -- */
+.nav-desktop {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  transition: opacity var(--duration-normal) var(--ease-default);
+}
+
+.nav-desktop .flex {
+  gap: 36px;
+}
+
+.nav-link {
+  font-family: var(--font-primary);
+  font-size: var(--text-button);
+  font-weight: 400;
+  transition: opacity var(--btn-transition);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.has-submenu {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.has-submenu .icon {
+  width: 12px;
+  height: 12px;
+  transition: transform var(--duration-fast) var(--ease-default);
+}
+
+/* -- Right Group -- */
+.component--header .group {
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.header-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: currentColor;
+  transition: all var(--btn-transition);
+  cursor: pointer;
+}
+
+.header-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.header-icon-btn .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* -- Contact Button (pill, outlined) -- */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  padding: 0 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: currentColor;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--btn-transition);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* -- Hamburger Menu Toggle (2 lines like original) -- */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  gap: 6px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: currentColor;
+  transition: all var(--duration-normal) var(--ease-default);
+  transform-origin: center;
+}
+
+.menu-toggle span:nth-child(2) {
+  display: none;
+}
+
+/* Hamburger -> X */
+.menu-toggle.--active span:nth-child(1) {
+  transform: translateY(3.75px) rotate(45deg);
+}
+
+.menu-toggle.--active span:nth-child(3) {
+  transform: translateY(-3.75px) rotate(-45deg);
+}
+
+/* -- WCAG touch target sizes -- */
+.header__icons a,
+.header__icons button,
+.contact-btn {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -- Responsive: hide desktop nav below 1100px -- */
+@media (max-width: 1100px) {
+  .nav-desktop {
+    display: none;
+  }
+}

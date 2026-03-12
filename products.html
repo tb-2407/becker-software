@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Products & Services — Websites, iOS Apps, macOS Apps, Web Apps, and Automation solutions by Becker Software.">
+    <meta property="og:image" content="./assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+  <title>Portfolio — Becker</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader"><div class="loader__inner"><svg class="loader__logo" viewBox="0 0 32 34" width="60" height="64">
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="'Inter', Helvetica, Arial, sans-serif" font-weight="700" font-size="28" fill="currentColor">B</text>
+</svg></div></div>
+
+  <!-- Header (gleich wie Homepage) -->
+  <header class="component component--header header">
+    <div class="container">
+      <div class="columns --center">
+        <div class="columns__item">
+          <a href="/" class="logo"><svg viewBox="0 0 109 34" width="109" height="34"><text x="0" y="25" font-family="'Inter', Helvetica, Arial, sans-serif" font-weight="700" font-size="24" fill="currentColor" letter-spacing="-0.5">BECKER</text></svg></a>
+        </div>
+        <div class="columns__item nav-desktop">
+          <div class="flex">
+            <a href="/products.html" class="nav-link has-submenu">Portfolio</a>
+            <a href="/company.html" class="nav-link">About</a>
+            <a href="/governance.html" class="nav-link">How I Work</a>
+            <a href="/sustainability.html" class="nav-link">Tech Stack</a>
+            <a href="/talents.html" class="nav-link">Work With Me</a>
+          </div>
+        </div>
+        <div class="group">
+          <a class="contact-btn" href="/contact.html">Contact</a>
+          <button class="header-icon-btn" aria-label="Search" data-open="search"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+          <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO JUMBO (Orange) -->
+    <section class="component component--hero-jumbo">
+      <div class="container">
+        <div class="label --over-main">Portfolio</div>
+        <h1 class="title --jumbo split">Products &amp;<br>Services</h1>
+        <p>From landing pages to full-stack applications — explore the complete range of digital products and services.</p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS ARCHIVE -->
+    <section class="component component--products-archive products-archive --beige">
+      <div class="container">
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn --active" data-category="all">All (19)</button>
+          <button class="filter-btn" data-category="web">Web (6)</button>
+          <button class="filter-btn" data-category="apple">Apple (6)</button>
+          <button class="filter-btn" data-category="automation">Automation (3)</button>
+          <button class="filter-btn" data-category="services">Services (4)</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="products-grid">
+          <!-- WEBSITES -->
+          <a href="/product-detail.html" class="card" data-category="web">
+            <div class="card__image"><img src="./assets/images/web-starter.webp" alt="Starter Website" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Single-page website with contact form, responsive design</p>
+              <h3 class="card__title">Starter Website (Onepager)</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="web">
+            <div class="card__image"><img src="./assets/images/web-business.webp" alt="Business Website" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Professional web presence, 5-8 pages with CMS</p>
+              <h3 class="card__title">Business Website</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="web">
+            <div class="card__image"><img src="./assets/images/web-professional.webp" alt="Professional Website" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Premium website, 8-15 pages with animations and advanced SEO</p>
+              <h3 class="card__title">Professional Website</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="web">
+            <div class="card__image"><img src="./assets/images/web-booking.webp" alt="Website mit Buchungssystem" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Website with Airbnb-style booking and payment integration</p>
+              <h3 class="card__title">Website mit Buchungssystem</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <!-- iOS APPS -->
+          <a href="/product-detail.html" class="card" data-category="apple">
+            <div class="card__image"><img src="./assets/images/ios-standard.webp" alt="Standard iOS App" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Native iPhone app with SwiftUI, Core Data or Cloud sync</p>
+              <h3 class="card__title">Standard iOS App</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="apple">
+            <div class="card__image"><img src="./assets/images/ios-hardware.webp" alt="iOS App mit Hardware" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">iOS app with camera, Bluetooth, sensors or speech recognition</p>
+              <h3 class="card__title">iOS App mit Hardware</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="apple">
+            <div class="card__image"><img src="./assets/images/ios-backend.webp" alt="iOS App mit Backend" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">iOS app with server backend, user accounts and API</p>
+              <h3 class="card__title">iOS App mit Backend</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <!-- macOS APPS -->
+          <a href="/product-detail.html" class="card" data-category="apple">
+            <div class="card__image"><img src="./assets/images/macos-desktop.webp" alt="macOS Desktop App" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Native Mac application with local data and App Store distribution</p>
+              <h3 class="card__title">macOS Desktop App</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="apple">
+            <div class="card__image"><img src="./assets/images/macos-companion.webp" alt="macOS + iOS Companion" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Companion app for both Mac and iPhone with iCloud sync</p>
+              <h3 class="card__title">macOS + iOS Companion</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <!-- watchOS -->
+          <a href="/product-detail.html" class="card" data-category="apple">
+            <div class="card__image"><img src="./assets/images/watchos.webp" alt="watchOS App" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Native Apple Watch app with complications and health features</p>
+              <h3 class="card__title">watchOS App</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <!-- WEB APPS -->
+          <a href="/product-detail.html" class="card" data-category="web">
+            <div class="card__image"><img src="./assets/images/web-frontend.webp" alt="Web App Frontend" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Interactive browser application, responsive, hosted</p>
+              <h3 class="card__title">Web App (Frontend)</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="web">
+            <div class="card__image"><img src="./assets/images/web-backend.webp" alt="Web App mit Backend" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Full-stack web application with database, auth and API</p>
+              <h3 class="card__title">Web App mit Backend</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <!-- AUTOMATION -->
+          <a href="/product-detail.html" class="card" data-category="automation">
+            <div class="card__image"><img src="./assets/images/automation-workflow.webp" alt="Workflow-Automation" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">n8n workflow design connecting email, CRM, calendar and more</p>
+              <h3 class="card__title">Workflow-Automation</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="automation">
+            <div class="card__image"><img src="./assets/images/automation-hosting.webp" alt="Automation Paket mit Hosting" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Automation workflow with dedicated server and monitoring</p>
+              <h3 class="card__title">Automation Paket mit Hosting</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="automation">
+            <div class="card__image"><img src="./assets/images/automation-chatbot.webp" alt="KI-Chatbot" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">AI-powered chatbot or WhatsApp agent with custom personality</p>
+              <h3 class="card__title">KI-Chatbot / WhatsApp-Agent</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <!-- SERVICES -->
+          <a href="/product-detail.html" class="card" data-category="services">
+            <div class="card__image"><img src="./assets/images/service-wartung.webp" alt="Wartungsvertrag" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Monthly updates, backups, SSL renewal, monitoring</p>
+              <h3 class="card__title">Wartungsvertrag Website</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="services">
+            <div class="card__image"><img src="./assets/images/service-hosting.webp" alt="Hosting-Service" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Domain, server, SSL and email — ongoing operations</p>
+              <h3 class="card__title">Hosting-Service</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="services">
+            <div class="card__image"><img src="./assets/images/service-inhaltspflege.webp" alt="Inhaltspflege" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">Text updates, image changes, new pages — billed hourly</p>
+              <h3 class="card__title">Inhaltspflege</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a href="/product-detail.html" class="card" data-category="services">
+            <div class="card__image"><img src="./assets/images/service-app.webp" alt="App-Wartung" style="width:100%; height:220px; object-fit:cover;"></div>
+            <div class="card__content">
+              <p class="card__description">OS updates, bug fixes, App Store compliance</p>
+              <h3 class="card__title">App-Wartung</h3>
+              <span class="card__link">Learn more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="component component--footer footer">
+    <div class="container">
+      <a href="/" class="logo footer__logo">
+        <svg viewBox="0 0 109 34" width="109" height="34" style="color: var(--color-white);">
+  <text x="0" y="25" font-family="'Inter', Helvetica, Arial, sans-serif" font-weight="700" font-size="24" fill="currentColor" letter-spacing="-0.5">BECKER</text>
+</svg>
+      </a>
+      <div class="footer__links">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+      <div class="footer__contact">
+        <span>M kontakt@software-becker.com</span>
+      </div>
+      <p class="footer__copyright">BECKER &copy; 2026</p>
+    </div>
+  </footer>
+
+  <nav class="component component--menu menu"></nav>
+  <aside class="component component--search search"></aside>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
